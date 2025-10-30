@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -68,7 +67,7 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className={`bg-white dark:bg-dark-bg text-gray-800 dark:text-light-text transition-colors duration-300`}>
+    <div className={`text-gray-800 dark:text-light-text transition-colors duration-300`}>
       <Header 
         isDarkMode={isDarkMode} 
         toggleDarkMode={toggleDarkMode}

@@ -1,75 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-g" />
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fatoki Olaitan Emmanuel - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-            },
-            colors: {
-              'dark-bg': '#121212',
-              'dark-surface': '#1E1E1E',
-              'dark-card': '#2A2A2A',
-              'neon-purple': '#a855f7',
-              'light-text': '#E0E0E0',
-              'dark-text': '#BDBDBD',
-            },
-            boxShadow: {
-              'neon': '0 0 5px #a855f7, 0 0 10px #a855f7, 0 0 15px #a855f7',
-              'neon-sm': '0 0 2px #a855f7, 0 0 5px #a855f7',
-            },
-            animation: {
-              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
-              'glow': 'glow 2s ease-in-out infinite alternate',
-            },
-            keyframes: {
-              fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              },
-              glow: {
-                'from': { textShadow: '0 0 5px #a855f7, 0 0 10px #a855f7' },
-                'to': { textShadow: '0 0 20px #a855f7, 0 0 30px #a855f7' },
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-      }
-      .section {
-        opacity: 0;
-      }
-      .section-visible {
-        animation: fadeInUp 1s ease-out forwards;
-      }
-    </style>
   <script type="importmap">
 {
   "imports": {
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0",
+    "vite": "https://aistudiocdn.com/vite@^7.1.12"
   }
 }
 </script>
 </head>
-  <body>
+  <body class="bg-white dark:bg-dark-bg">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
